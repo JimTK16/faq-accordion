@@ -12,7 +12,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/JimTK16/intro-component-with-sign-up-form
-- Live Site URL: https://intro-component-by-jim.netlify.app/
+- Live Site URL: https://faq-accordion-by-jim.netlify.app/
 
 ## My process
 
