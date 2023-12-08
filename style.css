@@ -12,6 +12,10 @@ svg {
   max-width: 100%;
 }
 
+button {
+  font: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -20,4 +24,122 @@ body {
   font-family: "Work Sans", sans-serif;
   line-height: 1.5;
   min-height: 100svh;
+
+  background-image: url(assets/images/background-pattern-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.main {
+  margin: 15rem auto;
+  max-width: 33rem;
+  border-radius: 0.8rem;
+  padding: 2rem 2rem;
+  background-color: white;
+  box-shadow: 2px 2px 8px 4px #aaaaaa17;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+
+.header-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+}
+
+.border {
+  border-bottom: 0.5px solid hsla(293, 16%, 49%, 0.089);
+  padding-block-end: 2rem;
+}
+
+.accordion {
+  width: 100%;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  text-align: left;
+  padding-inline-end: 7rem;
+  padding-block-start: 2rem;
+  color: hsl(292, 42%, 14%);
+}
+
+.accordion:hover {
+  color: hsl(304, 100%, 50%);
+}
+
+.active {
+  padding-block-end: 2rem;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+
+.panel-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(292, 16%, 49%);
+}
+
+.accordion::after {
+  content: url(assets/images/icon-plus.svg);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-25%);
+}
+
+.active::after {
+  content: url(assets/images/icon-minus.svg);
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+  }
+
+  .main {
+    margin: 18rem auto;
+    max-width: 62rem;
+    border-radius: 1.6rem;
+    padding: 4rem 4rem;
+  }
+
+  .header-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .header-title {
+    font-size: 5.4rem;
+  }
+
+  .accordion {
+    font-size: 1.8rem;
+    padding-inline-end: 7rem;
+    padding-block-start: 2rem;
+    color: hsl(292, 42%, 14%);
+  }
+
+  .panel-text {
+    font-size: 1.6rem;
+  }
 }

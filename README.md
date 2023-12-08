@@ -1,7 +1,6 @@
 # Frontend Mentor - FAQ accordion solution
 
-This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -27,6 +26,8 @@ Users should be able to:
 
 ### What I learned
 
-- More practicing with box shadow properties.
-- Using JS to perform form validation.
-
+- Select the next sibling element with .nextElementSibling
+- Animation the slide down of the content with maxHeight in JS:
+  . Set the initial maxHeight to 0.
+  . When the element is clicked set the maxHeight = element.scrollHeight + 'px'
+  . On the content's transition property to max-height 0.2s ease
